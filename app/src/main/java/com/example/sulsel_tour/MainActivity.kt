@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
             Sulsel_TourTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = "Iya",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -42,6 +42,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     Sulsel_TourTheme {
-        Greeting("Android")
+        Greeting("Iya")
     }
 }
