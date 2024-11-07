@@ -9,6 +9,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.sulseltour.ui.theme.SulselTourTheme
 
 @Composable
@@ -21,5 +22,15 @@ fun HomePage(navController: NavController) {
         Text(
             text = "Homepage"
         )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun HomePagePreview() {
+    val navController = rememberNavController()
+
+    SulselTourTheme {
+        HomePage(navController = navController)
     }
 }

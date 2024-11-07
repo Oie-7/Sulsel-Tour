@@ -46,6 +46,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.sulseltour.ui.theme.SulselTourTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -229,3 +230,13 @@ fun RegisterPage(navController: NavController) {
 //        RegisterPage()
 //    }
 //}
+
+@Preview(showBackground = true)
+@Composable
+fun RegisterPagePreview() {
+    val navController = rememberNavController()
+
+    SulselTourTheme {
+        RegisterPage(navController = navController)
+    }
+}
